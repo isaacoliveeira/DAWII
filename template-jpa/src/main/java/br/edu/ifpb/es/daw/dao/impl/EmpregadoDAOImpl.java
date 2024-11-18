@@ -9,7 +9,7 @@ import br.edu.ifpb.es.daw.entities.Empregado;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Id;
+
 import jakarta.persistence.PersistenceException;
 import jakarta.persistence.TypedQuery;
 
