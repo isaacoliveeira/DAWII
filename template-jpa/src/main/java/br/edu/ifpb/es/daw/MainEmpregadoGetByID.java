@@ -28,7 +28,7 @@ public class MainEmpregadoGetByID {
 
 			dao.save(empregado);
 
-			Empregado resultado = dao.getById(empregado.getId());
+			Empregado resultado = dao.getByID(empregado.getId());
 
 			System.out.println(empregado.equals(resultado));
 		}
