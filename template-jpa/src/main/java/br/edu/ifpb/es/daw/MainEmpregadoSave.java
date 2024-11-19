@@ -12,19 +12,18 @@ import jakarta.persistence.Persistence;
 public class MainEmpregadoSave {
 
 	public static void main(String[] args) throws DawException {
-		try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("daw")) {
+		try (EntityManagerFactory emf = Persistence.createEntityManagerFactory("daw")) {
 			EmpregradoDAO dao = new EmpregadoDAOImpl(emf);
 			Empregado empregado = new Empregado();
 
 			empregado.setNome("Isaac");
 			empregado.setSobrenome("Oliveira");
-			empregado.setCpf("111111111-11");
+			empregado.setCpf("" + System.nanoTime());
 			empregado.setDataNascimento(LocalDate.now());
 			empregado.setEndereco("Rua jose maia aquino");
-			empregado.setSalario(BigDecimal.valueOf(1245,24));
+			empregado.setSalario(BigDecimal.valueOf(1245, 24));
 			empregado.setSexo('M');
 			empregado.setNdepedentes(4);
-
 
 			System.out.println(empregado);
 
