@@ -29,7 +29,7 @@ public class Empregado {
     private String cpf;
 
     @NotNull
-    @Column(name = "DATA DE NASCIMENTO")
+    @Column(name = "DATA_DE_NASCIMENTO")
     private LocalDate dataNascimento;
 
     @Column(name = "ENDEREÇO")
