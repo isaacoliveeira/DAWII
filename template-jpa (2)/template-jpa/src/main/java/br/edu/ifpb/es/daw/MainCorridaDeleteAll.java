@@ -16,9 +16,8 @@ public class MainCorridaDeleteAll {
 			List<Corrida> corrida = dao.getAll();
 
 			for (Corrida corridas : corrida) {
-				//dao.delete(corrida.getId());
+				dao.delete(corrida.getId());
 			}
 		}
 	}
-
 }
